@@ -49,4 +49,27 @@ public:
 	}
 }; 
 
-
+int main() {
+	Stackarray s;
+	while (true) {
+		cout << endl;
+		cout << "\n***Stack Menu***\n";
+		cout << "1.push\n";
+		cout << "2.Pop\n";
+		cout << "3.Display\n";
+		cout << "4.Exit\n";
+		cout << "\nEnter your choice : ";
+		string input;
+		getline(cin, input);
+		char ch = (input.empty() ? '0' : input[0]);
+		switch (ch) {
+		case '1': {
+			cout << "|nEnter a element : ";
+			string element;
+			getline(cin, element);
+			s.push(element);
+			break;
+		}
+		}
+	}
+}
