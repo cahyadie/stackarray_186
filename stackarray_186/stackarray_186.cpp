@@ -32,7 +32,10 @@ public:
 		cout << "\nThe popped emelemt is : " << stack_array[top] << endl;	//step 2
 		top--; //step 3decrement
 	}
-
+	//method for cheeck if data is empty
+	bool Empty() {
+		return (top == -1);
+	}
 	
 }; 
 
