@@ -70,6 +70,13 @@ int main() {
 			s.push(element);
 			break;
 		}
+		case '2': 
+			if (s.Empty()) {
+				cout << "n\Stack is empty. " << endl;
+				break;
+			}
+			s.pop();
+			break;
 		}
 	}
 }
